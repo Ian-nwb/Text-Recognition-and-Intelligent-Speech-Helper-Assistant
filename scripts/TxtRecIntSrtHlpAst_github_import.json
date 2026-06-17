@@ -1,0 +1,962 @@
+{
+  "_meta": {
+    "project": " \u2014 Text Recognition and Intelligent Speech Helper Assistant",
+    "institution": "National University Philippines",
+    "total_issues": 41,
+    "total_story_points": 178,
+    "p1_issues": 30,
+    "p2_issues": 10,
+    "p3_issues": 1,
+    "total_labels": 51,
+    "total_milestones": 6,
+    "board_columns": [
+      "Backlog",
+      "To Do",
+      "In Progress",
+      "Code Review / Testing",
+      "Done"
+    ],
+    "usage": "Run import_github.sh or use import_github.py to create all issues via the GitHub API."
+  },
+  "labels": [
+    {
+      "name": "p1-must-have",
+      "color": "D85A30",
+      "description": "MoSCoW P1 \u2014 required for panel defense"
+    },
+    {
+      "name": "p2-should-have",
+      "color": "BA7517",
+      "description": "MoSCoW P2 \u2014 should be complete"
+    },
+    {
+      "name": "p3-nice-to-have",
+      "color": "3B6D11",
+      "description": "MoSCoW P3 \u2014 bonus scope"
+    },
+    {
+      "name": "phase-1",
+      "color": "7F77DD",
+      "description": "Phase 1: Setup & Planning"
+    },
+    {
+      "name": "phase-2",
+      "color": "1D9E75",
+      "description": "Phase 2: Core Mobile Features"
+    },
+    {
+      "name": "phase-3",
+      "color": "BA7517",
+      "description": "Phase 3: Backend API"
+    },
+    {
+      "name": "phase-4",
+      "color": "378ADD",
+      "description": "Phase 4: React Web Portal"
+    },
+    {
+      "name": "phase-5",
+      "color": "D85A30",
+      "description": "Phase 5: AI Integration"
+    },
+    {
+      "name": "phase-6",
+      "color": "888780",
+      "description": "Phase 6: Testing & Defense"
+    },
+    {
+      "name": "flutter",
+      "color": "54C5F8",
+      "description": "Flutter mobile app"
+    },
+    {
+      "name": "backend",
+      "color": "68A063",
+      "description": "Express.js backend"
+    },
+    {
+      "name": "frontend",
+      "color": "61DAFB",
+      "description": "React web portal"
+    },
+    {
+      "name": "database",
+      "color": "4DB33D",
+      "description": "MongoDB / Mongoose"
+    },
+    {
+      "name": "auth",
+      "color": "E8185F",
+      "description": "Authentication / JWT"
+    },
+    {
+      "name": "security",
+      "color": "C01D1D",
+      "description": "Security hardening"
+    },
+    {
+      "name": "ocr",
+      "color": "9C27B0",
+      "description": "OCR \u2014 ML Kit or Vision API"
+    },
+    {
+      "name": "tts",
+      "color": "FF9800",
+      "description": "Text-to-speech (flutter_tts)"
+    },
+    {
+      "name": "voice",
+      "color": "FF5722",
+      "description": "Voice commands (speech_to_text)"
+    },
+    {
+      "name": "ai",
+      "color": "009688",
+      "description": "AI \u2014 OpenAI / Gemini proxy"
+    },
+    {
+      "name": "accessibility",
+      "color": "2196F3",
+      "description": "Accessibility / WCAG compliance"
+    },
+    {
+      "name": "offline",
+      "color": "607D8B",
+      "description": "Offline mode / sync"
+    },
+    {
+      "name": "testing",
+      "color": "795548",
+      "description": "Testing / QA"
+    },
+    {
+      "name": "documentation",
+      "color": "9E9E9E",
+      "description": "Thesis chapters / docs"
+    },
+    {
+      "name": "devops",
+      "color": "FF6F00",
+      "description": "CI/CD / deployment"
+    },
+    {
+      "name": "setup",
+      "color": "3949AB",
+      "description": "Project setup / scaffolding"
+    },
+    {
+      "name": "core-feature",
+      "color": "880E4F",
+      "description": "Core novelty feature"
+    },
+    {
+      "name": "novelty",
+      "color": "AD1457",
+      "description": "Novelty differentiator"
+    },
+    {
+      "name": "thesis",
+      "color": "4E342E",
+      "description": "Thesis document task"
+    },
+    {
+      "name": "integration",
+      "color": "00695C",
+      "description": "Cross-layer integration"
+    },
+    {
+      "name": "performance",
+      "color": "F57F17",
+      "description": "Performance / latency"
+    },
+    {
+      "name": "release",
+      "color": "1565C0",
+      "description": "Release build / APK"
+    },
+    {
+      "name": "defense",
+      "color": "4527A0",
+      "description": "Panel defense preparation"
+    },
+    {
+      "name": "design",
+      "color": "AD1457",
+      "description": "UI/UX design artifacts"
+    },
+    {
+      "name": "cloudinary",
+      "color": "3448C5",
+      "description": "Cloudinary image storage"
+    },
+    {
+      "name": "google-vision",
+      "color": "4285F4",
+      "description": "Google Cloud Vision API"
+    },
+    {
+      "name": "openai",
+      "color": "10A37F",
+      "description": "OpenAI API integration"
+    },
+    {
+      "name": "rbac",
+      "color": "B71C1C",
+      "description": "Role-based access control"
+    },
+    {
+      "name": "admin",
+      "color": "0D47A1",
+      "description": "Admin panel / superadmin"
+    },
+    {
+      "name": "audit",
+      "color": "37474F",
+      "description": "Audit logging"
+    },
+    {
+      "name": "sync",
+      "color": "00838F",
+      "description": "Data sync / queue"
+    },
+    {
+      "name": "history",
+      "color": "4E342E",
+      "description": "Scan history"
+    },
+    {
+      "name": "settings",
+      "color": "37474F",
+      "description": "User preferences / settings"
+    },
+    {
+      "name": "scan",
+      "color": "6A1B9A",
+      "description": "Scan upload / management"
+    },
+    {
+      "name": "feedback",
+      "color": "E65100",
+      "description": "User feedback / reporting"
+    },
+    {
+      "name": "user",
+      "color": "1B5E20",
+      "description": "User profile management"
+    },
+    {
+      "name": "ui",
+      "color": "E91E63",
+      "description": "UI / UX implementation"
+    },
+    {
+      "name": "public-site",
+      "color": "0288D1",
+      "description": "Public info / landing site"
+    },
+    {
+      "name": "organizations",
+      "color": "00695C",
+      "description": "Multi-tenant org management"
+    },
+    {
+      "name": "users",
+      "color": "283593",
+      "description": "User management table"
+    },
+    {
+      "name": "dashboard",
+      "color": "1565C0",
+      "description": "Admin dashboard / charts"
+    },
+    {
+      "name": "scans",
+      "color": "4A148C",
+      "description": "Scan log viewer"
+    }
+  ],
+  "milestones": [
+    {
+      "title": "Phase 1 \u2014 Setup & Planning",
+      "description": "Weeks 1\u20133: All three projects scaffolded, Atlas connected, Chapter 1 drafted.",
+      "due_on": "2025-03-21T00:00:00Z"
+    },
+    {
+      "title": "Phase 2 \u2014 Core Mobile Features",
+      "description": "Weeks 4\u20137: Flutter OCR, TTS, voice commands, gesture nav, offline mode complete.",
+      "due_on": "2025-04-18T00:00:00Z"
+    },
+    {
+      "title": "Phase 3 \u2014 Backend API",
+      "description": "Weeks 8\u201311: All Express modules, MongoDB schemas, deployed to Render.com.",
+      "due_on": "2025-05-16T00:00:00Z"
+    },
+    {
+      "title": "Phase 4 \u2014 React Web Portal",
+      "description": "Weeks 12\u201315: Public landing site and superadmin panel deployed to Vercel.",
+      "due_on": "2025-06-13T00:00:00Z"
+    },
+    {
+      "title": "Phase 5 \u2014 AI Integration & System Sync",
+      "description": "Weeks 16\u201318: AI chat live, full E2E tested, performance audited.",
+      "due_on": "2025-07-04T00:00:00Z"
+    },
+    {
+      "title": "Phase 6 \u2014 Testing & Defense",
+      "description": "Weeks 19\u201320: APK release build, all chapters done, defense slides ready.",
+      "due_on": "2025-07-18T00:00:00Z"
+    }
+  ],
+  "issues": [
+    {
+      "title": "[SETUP-01] Initialize GitHub monorepo structure",
+      "body": "## User Story\nAs a developer, I want a clean monorepo so all three sub-projects (Flutter, Express, React) are version-controlled together.\n\n## Acceptance Criteria\n- [ ] Root repo contains `/app`, `/backend`, `/web`, `/docs` folders\n- [ ] `.gitignore` covers node_modules, .env, build/, .dart_tool/\n- [ ] Branch protection enabled on `main` (require PR + 1 review)\n- [ ] PR template created at `.github/pull_request_template.md`\n- [ ] `README.md` at root with project overview and setup links\n\n## Notes\nBase your folder structure on the architecture doc. See `docs/TxtRecIntSrtHlpAst_System_Architecture.pdf`.",
+      "labels": [
+        "phase-1",
+        "setup",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 1 \u2014 Setup & Planning",
+      "assignees": [],
+      "story_points": 2,
+      "layer": "DevOps",
+      "column": "Backlog"
+    },
+    {
+      "title": "[SETUP-02] Scaffold Flutter project and install dependencies",
+      "body": "## User Story\nAs a Flutter developer, I want the project scaffolded with all dependencies so I can start building screens immediately.\n\n## Acceptance Criteria\n- [ ] `flutter create app` run, unnecessary boilerplate removed\n- [ ] `pubspec.yaml` includes: google_ml_kit, flutter_tts, speech_to_text, image_picker, hive, hive_flutter, http, connectivity_plus, flutter_secure_storage\n- [ ] Folder structure created: lib/core, lib/services, lib/screens, lib/widgets, lib/models\n- [ ] `flutter run` launches on a physical Android device without errors\n- [ ] `.env` file with TxtRecIntSrtHlpAst_API_URL and `.env.example` committed\n\n## Story Points: 3",
+      "labels": [
+        "phase-1",
+        "setup",
+        "flutter",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 1 \u2014 Setup & Planning",
+      "assignees": [],
+      "story_points": 3,
+      "layer": "Mobile",
+      "column": "Backlog"
+    },
+    {
+      "title": "[SETUP-03] Scaffold Express.js backend with modular structure",
+      "body": "## User Story\nAs a backend developer, I want the Express project scaffolded with a feature-module structure so I can build each API module independently.\n\n## Acceptance Criteria\n- [ ] `npm init` done, all dependencies installed: express, mongoose, jsonwebtoken, bcrypt, multer, cloudinary, openai, helmet, cors, express-rate-limit, joi, dotenv\n- [ ] Folder structure: src/modules/, src/models/, src/middleware/, src/config/, src/utils/\n- [ ] `src/app.js` sets up middleware chain: helmet \u2192 cors \u2192 rate-limit \u2192 json parser \u2192 routes\n- [ ] `src/server.js` connects Mongoose then starts HTTP server\n- [ ] `nodemon` dev script configured in package.json\n- [ ] `.env.example` lists all required variables\n\n## Story Points: 3",
+      "labels": [
+        "phase-1",
+        "setup",
+        "backend",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 1 \u2014 Setup & Planning",
+      "assignees": [],
+      "story_points": 3,
+      "layer": "Backend",
+      "column": "Backlog"
+    },
+    {
+      "title": "[SETUP-04] Connect MongoDB Atlas M0 cluster",
+      "body": "## User Story\nAs a backend developer, I want MongoDB Atlas connected so all data persists to the cloud database.\n\n## Acceptance Criteria\n- [ ] Atlas M0 cluster created (free tier)\n- [ ] IP allowlist configured (0.0.0.0/0 for dev, restrict for prod)\n- [ ] Atlas user created with readWrite role\n- [ ] `src/config/db.js` implements mongoose.connect() with poolSize:10 and reconnect handling\n- [ ] Connection tested: `npm run dev` logs 'MongoDB connected'\n- [ ] MONGO_URI added to .env.example\n\n## Notes\nM0 has 512MB limit and 100 max connections \u2014 sufficient for capstone demo.",
+      "labels": [
+        "phase-1",
+        "setup",
+        "backend",
+        "database",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 1 \u2014 Setup & Planning",
+      "assignees": [],
+      "story_points": 2,
+      "layer": "Backend",
+      "column": "Backlog"
+    },
+    {
+      "title": "[SETUP-05] Scaffold React Vite app with TailwindCSS",
+      "body": "## User Story\nAs a frontend developer, I want the React project scaffolded with Tailwind so I can build both the public site and admin panel.\n\n## Acceptance Criteria\n- [ ] `npm create vite@latest web -- --template react` run\n- [ ] TailwindCSS 3 installed and configured (tailwind.config.js, postcss.config.js)\n- [ ] react-router-dom v6, axios, recharts, react-hook-form, date-fns installed\n- [ ] Route structure defined: `/` (public), `/admin/*` (protected)\n- [ ] `AuthContext.jsx` created with login/logout/currentUser\n- [ ] `ProtectedRoute.jsx` blocks non-superadmin from /admin/*\n- [ ] `VITE_API_URL` env var wired to axios base URL\n- [ ] Deploys to Vercel with placeholder content\n\n## Story Points: 3",
+      "labels": [
+        "phase-1",
+        "setup",
+        "frontend",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 1 \u2014 Setup & Planning",
+      "assignees": [],
+      "story_points": 3,
+      "layer": "Web",
+      "column": "Backlog"
+    },
+    {
+      "title": "[SETUP-06] Configure Cloudinary and GitHub Actions CI",
+      "body": "## User Story\nAs the team PM, I want image storage and CI pipeline ready before feature development begins.\n\n## Acceptance Criteria\n- [ ] Cloudinary account created, API key/secret added to .env.example\n- [ ] `src/config/cloudinary.js` exports configured v2 instance\n- [ ] GitHub Actions workflow: `.github/workflows/ci.yml` runs `npm test` on backend PRs\n- [ ] Flutter CI: `flutter analyze` and `flutter test` on app/ PRs\n- [ ] UptimeRobot free monitor configured to ping Render.com URL every 5 min (prevent cold start)\n\n## Story Points: 2",
+      "labels": [
+        "phase-1",
+        "setup",
+        "devops",
+        "p2-should-have"
+      ],
+      "milestone": "Phase 1 \u2014 Setup & Planning",
+      "assignees": [],
+      "story_points": 2,
+      "layer": "DevOps",
+      "column": "Backlog"
+    },
+    {
+      "title": "[SETUP-07] Write Chapter 1 draft (Introduction & Objectives)",
+      "body": "## Task\nWrite the first thesis chapter based on the approved proposal.\n\n## Acceptance Criteria\n- [ ] Background of the study (visual impairment in PH, existing app gaps)\n- [ ] Statement of the problem (5\u20137 specific problems)\n- [ ] Objectives (general + 5\u20136 specific, matching MOB/API/WEB features)\n- [ ] Scope and limitations (ML Kit OCR limits, Filipino TTS device dependency, no iOS focus)\n- [ ] Significance of the study (for NCDA, schools for the blind, PWD sector)\n- [ ] Definition of terms (OCR, TTS, STT, MERN, Flutter, Accessibility)\n- [ ] Saved to docs/TxtRecIntSrtHlpAst_Chapter1.docx\n\n## Story Points: 3",
+      "labels": [
+        "phase-1",
+        "documentation",
+        "thesis",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 1 \u2014 Setup & Planning",
+      "assignees": [],
+      "story_points": 3,
+      "layer": "Documentation",
+      "column": "Backlog"
+    },
+    {
+      "title": "[MOB-01] Implement Point-and-Read OCR (camera + ML Kit + TTS)",
+      "body": "## User Story\nAs a visually impaired user, I want to point my phone camera at text and have it read aloud immediately, so I can understand printed content without sighted assistance.\n\n## Acceptance Criteria\n- [ ] Camera opens on app launch via single tap or voice command 'scan'\n- [ ] `image_picker` supports both camera capture and gallery selection\n- [ ] `google_ml_kit` TextRecognitionV2 extracts text within 2 seconds for standard A4 at 12MP\n- [ ] Extracted text is passed to TTS within 300ms of extraction completing\n- [ ] If result is empty, TTS reads: 'Walang nahanap na teksto. Subukan ulit.'\n- [ ] Works fully offline (no internet required for this feature)\n- [ ] `OcrService` and `TtsService` are unit testable (mocks injectable)\n\n## Tech\n`google_ml_kit ^0.16` \u00b7 `image_picker ^1.0` \u00b7 `flutter_tts ^3.8`\n\n## Story Points: 8",
+      "labels": [
+        "phase-2",
+        "flutter",
+        "ocr",
+        "tts",
+        "p1-must-have",
+        "core-feature"
+      ],
+      "milestone": "Phase 2 \u2014 Core Mobile Features",
+      "assignees": [],
+      "story_points": 8,
+      "layer": "Mobile",
+      "column": "Backlog"
+    },
+    {
+      "title": "[MOB-02] Implement Filipino/English TTS with language switching",
+      "body": "## User Story\nAs a Filipino visually impaired user, I want the app to read text in Filipino so I can understand content in my native language without relying on poor English pronunciation of Tagalog words.\n\n## Acceptance Criteria\n- [ ] `flutter_tts` initialized with default language 'fil-PH'\n- [ ] Language toggles between 'fil-PH' and 'en-US' via settings or voice command\n- [ ] TTS speed adjustable from 0.5x to 2.0x, default 1.0x\n- [ ] Voice pitch adjustable for user preference\n- [ ] Runs fully offline using device Google TTS engine\n- [ ] `TtsService.speak()`, `stop()`, `setLanguage()`, `setRate()` methods implemented\n- [ ] Tested on Samsung and Xiaomi devices (common in PH market)\n\n## Notes\niOS Siri TTS may not support Filipino. Document as limitation in Chapter 5.\n\n## Story Points: 5",
+      "labels": [
+        "phase-2",
+        "flutter",
+        "tts",
+        "accessibility",
+        "p1-must-have",
+        "novelty"
+      ],
+      "milestone": "Phase 2 \u2014 Core Mobile Features",
+      "assignees": [],
+      "story_points": 5,
+      "layer": "Mobile",
+      "column": "Backlog"
+    },
+    {
+      "title": "[MOB-03] Implement voice command navigation",
+      "body": "## User Story\nAs a visually impaired user, I want to control the entire app using my voice so I never need to see or touch the screen.\n\n## Acceptance Criteria\n- [ ] `speech_to_text` listens continuously when app is in active mode\n- [ ] Haptic buzz confirms when listening starts\n- [ ] Commands recognized (Filipino and English variants):\n  - 'scan' / 'kumuha' \u2192 open camera\n  - 'basa' / 'read' \u2192 re-read current text\n  - 'stop' \u2192 stop TTS\n  - 'ipaliwanag' / 'explain' \u2192 trigger AI explain\n  - 'i-save' / 'save' \u2192 save scan to history\n  - 'history' \u2192 open history screen\n  - 'ulit' / 'repeat' \u2192 repeat last TTS\n  - 'settings' \u2192 open settings\n- [ ] Unrecognized command \u2192 TTS: 'Hindi ko naintindihan. Sabihin ulit.'\n- [ ] Command response latency under 1 second on mid-range Android\n- [ ] RECORD_AUDIO permission requested on first launch with explanation\n\n## Story Points: 8",
+      "labels": [
+        "phase-2",
+        "flutter",
+        "voice",
+        "accessibility",
+        "p1-must-have",
+        "novelty"
+      ],
+      "milestone": "Phase 2 \u2014 Core Mobile Features",
+      "assignees": [],
+      "story_points": 8,
+      "layer": "Mobile",
+      "column": "Backlog"
+    },
+    {
+      "title": "[MOB-04] Build gesture navigation UI with accessibility compliance",
+      "body": "## User Story\nAs a visually impaired user, I want large, predictable gesture zones so I can navigate by touch without seeing the screen.\n\n## Acceptance Criteria\n- [ ] All interactive elements meet 48\u00d748dp minimum (WCAG 2.5.5)\n- [ ] Swipe left \u2192 previous scan in history\n- [ ] Swipe right \u2192 next scan in history\n- [ ] Double tap \u2192 repeat current TTS\n- [ ] Long press on scan card \u2192 context menu (read, explain, save, delete) read aloud via TTS\n- [ ] Haptic feedback on: app launch, scan capture, TTS start, command recognized, error\n- [ ] All widgets have `Semantics` labels for TalkBack compatibility\n- [ ] Tested eyes-closed: full scan \u2192 read \u2192 explain \u2192 save flow with zero screen viewing\n\n## Story Points: 5",
+      "labels": [
+        "phase-2",
+        "flutter",
+        "accessibility",
+        "ui",
+        "p2-should-have"
+      ],
+      "milestone": "Phase 2 \u2014 Core Mobile Features",
+      "assignees": [],
+      "story_points": 5,
+      "layer": "Mobile",
+      "column": "Backlog"
+    },
+    {
+      "title": "[MOB-05] Implement offline mode with local scan queue",
+      "body": "## User Story\nAs a user in an area with no internet, I want OCR and TTS to work offline and my scans to sync when connectivity returns.\n\n## Acceptance Criteria\n- [ ] MOB-01 OCR and MOB-02 TTS complete successfully with airplane mode enabled\n- [ ] Offline scans stored in Hive box with `isSynced: false` flag\n- [ ] `connectivity_plus` monitors network state\n- [ ] When internet restored, `SyncService` uploads all pending scans to POST /api/scan/upload\n- [ ] TTS announces: 'Na-sync na ang iyong mga scan.' when sync completes\n- [ ] History screen shows unsynced scans with a pending indicator\n- [ ] Sync handles partial failure gracefully (retries failed items only)\n\n## Story Points: 5",
+      "labels": [
+        "phase-2",
+        "flutter",
+        "offline",
+        "sync",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 2 \u2014 Core Mobile Features",
+      "assignees": [],
+      "story_points": 5,
+      "layer": "Mobile",
+      "column": "Backlog"
+    },
+    {
+      "title": "[MOB-06] Build scan history screen",
+      "body": "## User Story\nAs a user, I want to browse and re-read my past scans so I can revisit documents without scanning them again.\n\n## Acceptance Criteria\n- [ ] Voice command 'history' navigates to history screen\n- [ ] History items read aloud as numbered list on screen open\n- [ ] User can say 'Item 3' or swipe to select a history item\n- [ ] Selecting an item reads the extracted text aloud\n- [ ] Paginated \u2014 fetches 20 items per page from GET /api/scan/history\n- [ ] Delete via voice command 'burahin' or long-press gesture\n- [ ] Offline-queued scans appear with pending badge\n\n## Story Points: 5",
+      "labels": [
+        "phase-2",
+        "flutter",
+        "history",
+        "p2-should-have"
+      ],
+      "milestone": "Phase 2 \u2014 Core Mobile Features",
+      "assignees": [],
+      "story_points": 5,
+      "layer": "Mobile",
+      "column": "Backlog"
+    },
+    {
+      "title": "[MOB-07] Build user settings screen",
+      "body": "## User Story\nAs a user or caregiver, I want to adjust TTS speed, pitch, language, and font size so the app fits my specific accessibility needs.\n\n## Acceptance Criteria\n- [ ] Settings accessible via voice command 'settings' or bottom nav\n- [ ] TTS speed slider 0.5x\u20132.0x, default 1.0x \u2014 applied immediately on change\n- [ ] Language toggle: Filipino / English\n- [ ] Font size setting affects all on-screen text\n- [ ] Settings cached in SharedPreferences locally\n- [ ] On login, settings fetched from GET /api/user/profile and applied\n- [ ] Changes synced to PATCH /api/user/settings\n\n## Story Points: 3",
+      "labels": [
+        "phase-2",
+        "flutter",
+        "settings",
+        "p2-should-have"
+      ],
+      "milestone": "Phase 2 \u2014 Core Mobile Features",
+      "assignees": [],
+      "story_points": 3,
+      "layer": "Mobile",
+      "column": "Backlog"
+    },
+    {
+      "title": "[MOB-08] Flutter login screen and auth token management",
+      "body": "## User Story\nAs a user, I want to log in securely so my scan history and settings are saved to my personal account.\n\n## Acceptance Criteria\n- [ ] Login screen with email + password fields \u2014 large tap targets\n- [ ] Calls POST /api/auth/login, stores JWT in `flutter_secure_storage`\n- [ ] Invalid credentials \u2192 TTS: 'Mali ang email o password. Subukan ulit.'\n- [ ] Token auto-attached to all `ApiService` requests via HTTP header\n- [ ] On 401 response, user redirected to login screen\n- [ ] Guest mode available (offline OCR + TTS without account)\n\n## Story Points: 3",
+      "labels": [
+        "phase-2",
+        "flutter",
+        "auth",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 2 \u2014 Core Mobile Features",
+      "assignees": [],
+      "story_points": 3,
+      "layer": "Mobile",
+      "column": "Backlog"
+    },
+    {
+      "title": "[MOB-09] Write OCR and TTS unit tests",
+      "body": "## Task\nEnsure core services are tested before backend integration begins.\n\n## Acceptance Criteria\n- [ ] `test/ocr_service_test.dart` tests ML Kit extraction on 5 sample images (printed text, handwriting, signage, receipt, ID card)\n- [ ] OCR accuracy \u226580% on printed text samples \u2014 document actual % in test output\n- [ ] `test/tts_service_test.dart` verifies speak/stop cycle and language switching\n- [ ] Tests run in CI via `flutter test` on PRs to `app/`\n- [ ] Test results documented in `docs/TxtRecIntSrtHlpAst_Test_Results.pdf`\n\n## Story Points: 3",
+      "labels": [
+        "phase-2",
+        "flutter",
+        "testing",
+        "p2-should-have"
+      ],
+      "milestone": "Phase 2 \u2014 Core Mobile Features",
+      "assignees": [],
+      "story_points": 3,
+      "layer": "Mobile",
+      "column": "Backlog"
+    },
+    {
+      "title": "[API-01] Build JWT authentication system (register + login)",
+      "body": "## User Story\nAs a user, I want to register and log in securely so my data is private and tied to my account.\n\n## Acceptance Criteria\n- [ ] `User` Mongoose schema: name, email (unique), password (hashed), role enum (user|org_admin|superadmin), organizationId ref, settings subdoc\n- [ ] POST /api/auth/register: validates body with Joi, hashes password bcrypt rounds=12, returns JWT\n- [ ] POST /api/auth/login: finds user by email, bcrypt.compare, returns JWT (1h expiry)\n- [ ] JWT_SECRET is 256-bit random string in .env \u2014 validated on startup\n- [ ] Passwords never returned in any API response\n- [ ] `verifyToken()` middleware attaches req.user to protected routes\n- [ ] `requireRole(role)` middleware factory for RBAC\n\n## Tech\n`jsonwebtoken ^9` \u00b7 `bcrypt ^5` \u00b7 `joi ^17`\n\n## Story Points: 5",
+      "labels": [
+        "phase-3",
+        "backend",
+        "auth",
+        "security",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 3 \u2014 Backend API",
+      "assignees": [],
+      "story_points": 5,
+      "layer": "Backend",
+      "column": "Backlog"
+    },
+    {
+      "title": "[API-02] Build all Mongoose schemas (5 collections)",
+      "body": "## Task\nCreate all MongoDB schemas before any feature modules are built.\n\n## Acceptance Criteria\n- [ ] `User.js` \u2014 name, email, password, role, organizationId, settings: {ttsSpeed, language, fontSize}, timestamps\n- [ ] `ScanHistory.js` \u2014 userId ref, imageUrl, extractedText, ocrEngine enum (mlkit|vision), isSynced bool, timestamps. TTL index: 90 days\n- [ ] `AiConversation.js` \u2014 userId ref, scanId ref, messages: [{role, content, timestamp}], model string, timestamps\n- [ ] `Organization.js` \u2014 name, type enum, adminId ref, isActive bool, timestamps\n- [ ] `Feedback.js` \u2014 userId ref, scanId ref, rating (1-5), issue enum, notes, status enum (open|reviewed|resolved), timestamps\n- [ ] `AdminLog.js` \u2014 actor userId, action string, target string, timestamp. Append-only (no update/delete routes)\n- [ ] Indexes added: userId on scan_history, organizationId on users, createdAt on admin_logs\n\n## Story Points: 3",
+      "labels": [
+        "phase-3",
+        "backend",
+        "database",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 3 \u2014 Backend API",
+      "assignees": [],
+      "story_points": 3,
+      "layer": "Backend",
+      "column": "Backlog"
+    },
+    {
+      "title": "[API-03] Build scan management API (upload + history + delete)",
+      "body": "## User Story\nAs a mobile app, I want to upload scans to the server and retrieve history so user data persists across devices and sessions.\n\n## Acceptance Criteria\n- [ ] POST /api/scan/upload: accepts multipart image, uploads to Cloudinary (signed), saves ScanHistory doc, returns saved scan\n- [ ] GET /api/scan/history: returns paginated (20/page) scans for req.user, newest first\n- [ ] GET /api/scan/:id: returns single scan \u2014 validates ownership (userId match)\n- [ ] DELETE /api/scan/:id: deletes MongoDB doc AND Cloudinary asset by public_id\n- [ ] All routes require valid JWT\n- [ ] `multer-storage-cloudinary` used for direct upload (no local disk)\n- [ ] Response shape: `{ success: true, data: scan }` via utils/response.js\n\n## Story Points: 5",
+      "labels": [
+        "phase-3",
+        "backend",
+        "scan",
+        "cloudinary",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 3 \u2014 Backend API",
+      "assignees": [],
+      "story_points": 5,
+      "layer": "Backend",
+      "column": "Backlog"
+    },
+    {
+      "title": "[API-04] Build Google Vision OCR cloud fallback endpoint",
+      "body": "## User Story\nAs the system, I want a cloud OCR fallback for complex documents where on-device ML Kit struggles.\n\n## Acceptance Criteria\n- [ ] POST /api/scan/ocr-cloud: accepts multipart image, calls Google Vision TEXT_DETECTION\n- [ ] Returns structured response: `{ text, confidence, engine: 'vision' }`\n- [ ] GCP project created with billing account (required even for free tier)\n- [ ] Hard $0 budget cap set in GCP Console to prevent charges\n- [ ] Usage logged in ScanHistory.ocrEngine field\n- [ ] If Vision API fails or quota exceeded \u2192 structured 503 with message\n- [ ] Tested with: printed text, handwriting, low-light photo, receipt\n\n## Notes\nGCP billing account required for Vision API even on free tier (1,000 req/mo). Set hard budget cap.\n\n## Story Points: 5",
+      "labels": [
+        "phase-3",
+        "backend",
+        "ocr",
+        "google-vision",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 3 \u2014 Backend API",
+      "assignees": [],
+      "story_points": 5,
+      "layer": "Backend",
+      "column": "Backlog"
+    },
+    {
+      "title": "[API-05] Build AI proxy endpoint (OpenAI / Gemini)",
+      "body": "## User Story\nAs a user, I want to ask questions about scanned text and receive plain-language explanations in Filipino or English.\n\n## Acceptance Criteria\n- [ ] POST /api/ai/explain: accepts { text, question, conversationId }\n- [ ] System prompt instructs model to respond in same language as user's question\n- [ ] Full AI response returned and saved to AiConversation collection\n- [ ] GET /api/ai/history: returns user's conversation history\n- [ ] API key stored server-side only \u2014 never exposed to Flutter client\n- [ ] Rate limited to 20 requests/user/hour via express-rate-limit per userId\n- [ ] If API unavailable \u2192 503 with user-friendly message\n- [ ] Tested with: Filipino questions, English questions, follow-up context\n\n## Notes\nDefault to GPT-4o-mini. If budget is a concern, swap to Gemini 1.5 Flash (free 60 req/min).\n\n## Story Points: 5",
+      "labels": [
+        "phase-3",
+        "backend",
+        "ai",
+        "openai",
+        "p1-must-have",
+        "novelty"
+      ],
+      "milestone": "Phase 3 \u2014 Backend API",
+      "assignees": [],
+      "story_points": 5,
+      "layer": "Backend",
+      "column": "Backlog"
+    },
+    {
+      "title": "[API-06] Build user profile and settings API",
+      "body": "## User Story\nAs a user, I want my preferences saved to the server so they're restored on any device I log in from.\n\n## Acceptance Criteria\n- [ ] GET /api/user/profile: returns { name, email, role, organizationId, settings }\n- [ ] PATCH /api/user/settings: accepts { ttsSpeed, language, fontSize }, validates with Joi, updates MongoDB\n- [ ] PATCH /api/user/password: requires currentPassword confirmation before update\n- [ ] Settings returned in login response for immediate app-side application\n- [ ] All routes require valid JWT\n\n## Story Points: 3",
+      "labels": [
+        "phase-3",
+        "backend",
+        "user",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 3 \u2014 Backend API",
+      "assignees": [],
+      "story_points": 3,
+      "layer": "Backend",
+      "column": "Backlog"
+    },
+    {
+      "title": "[API-07] Build superadmin management API",
+      "body": "## User Story\nAs a superadmin, I want full visibility and control over all users and organizations in the system.\n\n## Acceptance Criteria\n- [ ] GET /api/admin/users: paginated, searchable, filterable by role/org\n- [ ] PATCH /api/admin/user/:id: update role, isActive, organizationId\n- [ ] GET /api/admin/organizations: all orgs with member count and admin info\n- [ ] POST /api/admin/organizations: create new org tenant\n- [ ] GET /api/admin/logs: audit log newest-first, filterable by action type\n- [ ] GET /api/admin/stats: total users, scans today, AI queries today, active orgs\n- [ ] All routes protected by requireRole('superadmin')\n- [ ] Every admin action writes to AdminLog collection\n\n## Story Points: 8",
+      "labels": [
+        "phase-3",
+        "backend",
+        "admin",
+        "rbac",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 3 \u2014 Backend API",
+      "assignees": [],
+      "story_points": 8,
+      "layer": "Backend",
+      "column": "Backlog"
+    },
+    {
+      "title": "[API-08] Build feedback API",
+      "body": "## User Story\nAs a user, I want to report poor OCR results so the team can track and improve accuracy.\n\n## Acceptance Criteria\n- [ ] POST /api/feedback: accepts { scanId, rating (1-5), issue enum, notes } \u2014 requires JWT\n- [ ] GET /api/feedback (admin/superadmin only): paginated, filterable by status\n- [ ] PATCH /api/feedback/:id: admin updates status (open \u2192 reviewed \u2192 resolved)\n- [ ] issue enum: wrong_text | poor_tts | app_crash | other\n- [ ] Status transition validated (cannot go reviewed \u2192 open)\n\n## Story Points: 3",
+      "labels": [
+        "phase-3",
+        "backend",
+        "feedback",
+        "p2-should-have"
+      ],
+      "milestone": "Phase 3 \u2014 Backend API",
+      "assignees": [],
+      "story_points": 3,
+      "layer": "Backend",
+      "column": "Backlog"
+    },
+    {
+      "title": "[API-09] Configure security middleware stack (Helmet, CORS, rate limiting)",
+      "body": "## Task\nHarden the Express API before deployment.\n\n## Acceptance Criteria\n- [ ] `helmet()` applied globally \u2014 sets CSP, X-Frame-Options, HSTS, etc.\n- [ ] `cors()` allows only: Vercel React URL, localhost:5173 for dev. No wildcard origin in production.\n- [ ] Global rate limit: 100 req/15min per IP via express-rate-limit\n- [ ] Auth route rate limit: 10 req/15min per IP (prevents brute force)\n- [ ] AI route rate limit: 20 req/hour per userId (cost control)\n- [ ] All request bodies validated with Joi before controller logic\n- [ ] 404 and global error handler middleware added\n\n## Story Points: 3",
+      "labels": [
+        "phase-3",
+        "backend",
+        "security",
+        "p2-should-have"
+      ],
+      "milestone": "Phase 3 \u2014 Backend API",
+      "assignees": [],
+      "story_points": 3,
+      "layer": "Backend",
+      "column": "Backlog"
+    },
+    {
+      "title": "[API-10] Deploy backend to Render.com and write Postman collection",
+      "body": "## Task\nMake the API publicly accessible and documented for the mobile and web teams.\n\n## Acceptance Criteria\n- [ ] Express app deployed to Render.com free tier\n- [ ] All environment variables set in Render dashboard\n- [ ] UptimeRobot monitor pings /api/health every 5 minutes\n- [ ] GET /api/health endpoint returns 200 with { status: 'ok', timestamp }\n- [ ] Postman collection created: all 20+ endpoints with sample bodies, auth headers, env variables\n- [ ] Collection exported to `docs/TxtRecIntSrtHlpAst_API_Collection.json`\n- [ ] Postman environment file includes: BASE_URL, JWT_TOKEN variables\n\n## Story Points: 3",
+      "labels": [
+        "phase-3",
+        "backend",
+        "devops",
+        "documentation",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 3 \u2014 Backend API",
+      "assignees": [],
+      "story_points": 3,
+      "layer": "Backend",
+      "column": "Backlog"
+    },
+    {
+      "title": "[WEB-01] Build public landing page (GCash-style info site)",
+      "body": "## User Story\nAs a stakeholder or panel member, I want a polished public website so I can understand what TxtRecIntSrtHlpAst is and download the APK.\n\n## Acceptance Criteria\n- [ ] Hero: app name, tagline 'Marinig ang Mundo', Download APK CTA button\n- [ ] Features grid: 6 cards \u2014 Point & Read, AI Explain, Filipino TTS, Voice Control, Offline Mode, Scan History\n- [ ] How It Works: 3-step illustrated flow (Capture \u2192 Extract \u2192 Listen)\n- [ ] About section: project background, NU branding, team member names, client organization logo\n- [ ] FAQ accordion: 6 questions about accessibility features and system requirements\n- [ ] Footer: team names, course, academic year, NU logo, GitHub repo link\n- [ ] Lighthouse performance \u226585, accessibility \u226590\n- [ ] Deployed to Vercel with custom domain (optional)\n- [ ] Fully responsive \u2014 mobile, tablet, desktop\n\n## Story Points: 8",
+      "labels": [
+        "phase-4",
+        "frontend",
+        "public-site",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 4 \u2014 React Web Portal",
+      "assignees": [],
+      "story_points": 8,
+      "layer": "Web",
+      "column": "Backlog"
+    },
+    {
+      "title": "[WEB-02] Build superadmin authentication and protected routing",
+      "body": "## User Story\nAs a superadmin, I want a secure login portal so only authorized administrators can access the management dashboard.\n\n## Acceptance Criteria\n- [ ] Login page at /admin/login \u2014 email + password, large submit button\n- [ ] Calls POST /api/auth/login, stores JWT in React state (NOT localStorage)\n- [ ] ProtectedRoute blocks /admin/* if no token or role !== 'superadmin'\n- [ ] Axios interceptor attaches Authorization: Bearer {token} to all requests\n- [ ] On 401 response, redirect to /admin/login with toast: 'Session expired.'\n- [ ] Logout clears token from state and redirects to /admin/login\n- [ ] AdminLayout component wraps all /admin/* pages with sidebar + topbar\n\n## Story Points: 5",
+      "labels": [
+        "phase-4",
+        "frontend",
+        "admin",
+        "auth",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 4 \u2014 React Web Portal",
+      "assignees": [],
+      "story_points": 5,
+      "layer": "Web",
+      "column": "Backlog"
+    },
+    {
+      "title": "[WEB-03] Build admin dashboard with metrics and charts",
+      "body": "## User Story\nAs a superadmin, I want a dashboard overview so I can monitor platform health at a glance.\n\n## Acceptance Criteria\n- [ ] Metric cards: Total Users, Scans Today, AI Queries Today, Active Organizations\n- [ ] Line chart: scans per day for last 30 days (recharts LineChart)\n- [ ] Bar chart: top 5 most active users by scan count\n- [ ] Recent feedback table: last 5 open items with status badges\n- [ ] All data from GET /api/admin/stats \u2014 loading skeleton shown while fetching\n- [ ] Error state shown if API is unavailable\n- [ ] Data auto-refreshes every 60 seconds\n\n## Story Points: 5",
+      "labels": [
+        "phase-4",
+        "frontend",
+        "admin",
+        "dashboard",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 4 \u2014 React Web Portal",
+      "assignees": [],
+      "story_points": 5,
+      "layer": "Web",
+      "column": "Backlog"
+    },
+    {
+      "title": "[WEB-04] Build user management table (CRUD + role assignment)",
+      "body": "## User Story\nAs a superadmin, I want to manage all users \u2014 view, search, assign roles, and deactivate \u2014 from one screen.\n\n## Acceptance Criteria\n- [ ] Searchable data table: Name, Email, Role, Organization, Status, Joined date\n- [ ] Role dropdown per row: user | org_admin | superadmin \u2014 triggers PATCH /api/admin/user/:id\n- [ ] Active/Inactive toggle \u2014 inactive users cannot log in\n- [ ] Pagination: 25 per page with prev/next controls and total count\n- [ ] Client-side CSV export of current filtered results\n- [ ] Confirmation modal before role change or deactivation\n\n## Story Points: 5",
+      "labels": [
+        "phase-4",
+        "frontend",
+        "admin",
+        "users",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 4 \u2014 React Web Portal",
+      "assignees": [],
+      "story_points": 5,
+      "layer": "Web",
+      "column": "Backlog"
+    },
+    {
+      "title": "[WEB-05] Build organization/tenancy management",
+      "body": "## User Story\nAs a superadmin, I want to create and manage organizations so institutional clients can use TxtRecIntSrtHlpAst with their own admin.\n\n## Acceptance Criteria\n- [ ] Org list table: Name, Type, Admin, Member Count, Created Date\n- [ ] Create org modal: name, type (school|ngo|government|other), assign org_admin from existing users\n- [ ] Click org row \u2192 drill-down: member list, roles, scan activity\n- [ ] Deactivate org button \u2014 all members blocked until reactivated\n- [ ] Calls GET/POST /api/admin/organizations\n\n## Story Points: 5",
+      "labels": [
+        "phase-4",
+        "frontend",
+        "admin",
+        "organizations",
+        "p2-should-have"
+      ],
+      "milestone": "Phase 4 \u2014 React Web Portal",
+      "assignees": [],
+      "story_points": 5,
+      "layer": "Web",
+      "column": "Backlog"
+    },
+    {
+      "title": "[WEB-06] Build scan logs viewer and feedback management",
+      "body": "## User Story\nAs a superadmin, I want to review all scan records and user feedback so I can monitor OCR quality and resolve issues.\n\n## Acceptance Criteria\n**Scan Logs:**\n- [ ] Table: User, Org, OCR Engine, Text Preview (50 chars), Date\n- [ ] Filters: date range, user search, OCR engine (mlkit|vision)\n- [ ] Click row \u2192 modal with full Cloudinary image + full extracted text\n\n**Feedback Management:**\n- [ ] Table: User, Issue Type, Rating (stars), Status badge, Date\n- [ ] Filter by status: All | Open | Reviewed | Resolved\n- [ ] Click row \u2192 detail panel with notes + linked scan preview\n- [ ] PATCH /api/feedback/:id to update status \u2014 confirmation toast\n\n## Story Points: 5",
+      "labels": [
+        "phase-4",
+        "frontend",
+        "admin",
+        "scans",
+        "feedback",
+        "p2-should-have"
+      ],
+      "milestone": "Phase 4 \u2014 React Web Portal",
+      "assignees": [],
+      "story_points": 5,
+      "layer": "Web",
+      "column": "Backlog"
+    },
+    {
+      "title": "[WEB-07] Build audit log viewer",
+      "body": "## User Story\nAs a superadmin, I want to see a complete audit trail of system actions for accountability and institutional reporting.\n\n## Acceptance Criteria\n- [ ] Read-only table: Actor, Action, Target, Timestamp\n- [ ] Filter by action type: login | role_change | delete | org_change\n- [ ] Newest entries first, paginated 50/page\n- [ ] CSV export for institutional audit reporting\n- [ ] No edit or delete controls on the log view\n\n## Story Points: 3",
+      "labels": [
+        "phase-4",
+        "frontend",
+        "admin",
+        "audit",
+        "p3-nice-to-have"
+      ],
+      "milestone": "Phase 4 \u2014 React Web Portal",
+      "assignees": [],
+      "story_points": 3,
+      "layer": "Web",
+      "column": "Backlog"
+    },
+    {
+      "title": "[WEB-08] Deploy React web portal to Vercel",
+      "body": "## Task\nMake both the public site and admin portal publicly accessible.\n\n## Acceptance Criteria\n- [ ] GitHub repo connected to Vercel (auto-deploy on push to main)\n- [ ] VITE_API_URL env var set to Render.com backend URL\n- [ ] Public site accessible at Vercel URL\n- [ ] /admin/login accessible and functional against live API\n- [ ] Lighthouse run on public site \u2014 performance \u226585, accessibility \u226590\n- [ ] Optional: custom domain configured (.com.ph)\n\n## Story Points: 2",
+      "labels": [
+        "phase-4",
+        "frontend",
+        "devops",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 4 \u2014 React Web Portal",
+      "assignees": [],
+      "story_points": 2,
+      "layer": "Web",
+      "column": "Backlog"
+    },
+    {
+      "title": "[INT-01] Build Flutter AI explain chat screen",
+      "body": "## User Story\nAs a visually impaired user, I want to ask questions about my scanned text and hear AI explanations in my language so I can understand complex content.\n\n## Acceptance Criteria\n- [ ] Triggered by voice command 'ipaliwanag' / 'explain' after any scan\n- [ ] Calls POST /api/ai/explain with current scan text + user question\n- [ ] AI response displayed on screen AND read aloud via TTS automatically\n- [ ] Conversation context maintained for follow-up questions in same session\n- [ ] Loading indicator + TTS 'Naglo-load...' while waiting for response\n- [ ] Error state if offline or API fails \u2014 TTS reads fallback message\n- [ ] Conversation history viewable via GET /api/ai/history\n\n## Story Points: 5",
+      "labels": [
+        "phase-5",
+        "flutter",
+        "ai",
+        "p1-must-have",
+        "novelty"
+      ],
+      "milestone": "Phase 5 \u2014 AI Integration & System Sync",
+      "assignees": [],
+      "story_points": 5,
+      "layer": "Mobile",
+      "column": "Backlog"
+    },
+    {
+      "title": "[INT-02] Full end-to-end integration test (Flutter \u2192 Express \u2192 MongoDB \u2192 React)",
+      "body": "## Task\nVerify the complete system works together before final testing phase.\n\n## Acceptance Criteria\n- [ ] E2E flow tested: camera scan \u2192 ML Kit OCR \u2192 upload to Express \u2192 save to MongoDB \u2192 appear in React admin scan logs\n- [ ] AI flow tested: scan \u2192 voice command \u2192 Express AI proxy \u2192 GPT response \u2192 TTS readout\n- [ ] Auth flow: register via API \u2192 login in Flutter \u2192 access history \u2192 visible in React admin user table\n- [ ] Offline flow: scan without internet \u2192 sync when connected \u2192 appears in history\n- [ ] All API endpoints return correct responses with Flutter as the HTTP client (not Postman)\n- [ ] Issues logged and triaged \u2014 critical bugs fixed before Phase 6\n\n## Story Points: 5",
+      "labels": [
+        "phase-5",
+        "integration",
+        "testing",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 5 \u2014 AI Integration & System Sync",
+      "assignees": [],
+      "story_points": 5,
+      "layer": "Full Stack",
+      "column": "Backlog"
+    },
+    {
+      "title": "[INT-03] Performance and accessibility audit",
+      "body": "## Task\nMeasure and document system performance to include in Chapter 4 results.\n\n## Acceptance Criteria\n- [ ] OCR latency: measure on 10 sample images \u2014 target <2s, document actual avg\n- [ ] API response time: measure /api/scan/upload and /api/ai/explain \u2014 target <500ms and <1s respectively\n- [ ] TTS startup: measure time from text-ready to first spoken word \u2014 target <300ms\n- [ ] Flutter app tested eyes-closed: full feature flow with zero screen viewing\n- [ ] TalkBack compatibility verified on Android \u2014 all Semantics labels announced\n- [ ] React Lighthouse: public site \u226585 performance, \u226590 accessibility\n- [ ] All results tabulated and saved to docs/TxtRecIntSrtHlpAst_Test_Results.pdf\n\n## Story Points: 5",
+      "labels": [
+        "phase-5",
+        "testing",
+        "accessibility",
+        "performance",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 5 \u2014 AI Integration & System Sync",
+      "assignees": [],
+      "story_points": 5,
+      "layer": "Full Stack",
+      "column": "Backlog"
+    },
+    {
+      "title": "[DEF-01] APK release build and sideload testing",
+      "body": "## Task\nProduce the final signed APK deliverable for panel demonstration.\n\n## Acceptance Criteria\n- [ ] `flutter build apk --release` completes without errors\n- [ ] APK signed with a keystore (document keystore location safely)\n- [ ] APK sideloaded and tested on at least 2 physical Android devices\n- [ ] Full demo flow works on release build: scan \u2192 TTS \u2192 AI explain \u2192 history \u2192 admin portal\n- [ ] APK file size documented\n- [ ] APK download link added to public React website\n\n## Story Points: 3",
+      "labels": [
+        "phase-6",
+        "flutter",
+        "release",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 6 \u2014 Testing & Defense",
+      "assignees": [],
+      "story_points": 3,
+      "layer": "Mobile",
+      "column": "Backlog"
+    },
+    {
+      "title": "[DEF-02] Finalize thesis chapters 2\u20135",
+      "body": "## Task\nComplete all remaining thesis documentation for NU submission.\n\n## Acceptance Criteria\n- [ ] Chapter 2: Review of Related Literature \u2014 15\u201320 sources, local and foreign, with synthesis paragraph\n- [ ] Chapter 3: Methodology \u2014 Agile SDLC narrative, system design diagrams, tools justification, testing approach\n- [ ] Chapter 4: Results and Discussion \u2014 screenshots, OCR accuracy table, AI response samples, Lighthouse scores, user testing summary\n- [ ] Chapter 5: Conclusions and Recommendations \u2014 conclusions per objective, limitations, future work (live OCR, sign language, iOS)\n- [ ] All documents saved to docs/ folder\n- [ ] Reviewed by all team members before submission\n\n## Story Points: 8",
+      "labels": [
+        "phase-6",
+        "documentation",
+        "thesis",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 6 \u2014 Testing & Defense",
+      "assignees": [],
+      "story_points": 8,
+      "layer": "Documentation",
+      "column": "Backlog"
+    },
+    {
+      "title": "[DEF-03] Prepare defense slides and demo script",
+      "body": "## Task\nPrepare all panel defense materials.\n\n## Acceptance Criteria\n- [ ] Defense slides (docs/TxtRecIntSrtHlpAst_DefenseSlides.pptx) cover: problem, novelty, solution, architecture, demo flow, results, Q&A\n- [ ] Demo script written: timed 5-minute flow \u2014 camera scan \u2192 TTS \u2192 'Ipaliwanag' \u2192 AI response \u2192 admin portal review\n- [ ] Sprint burndown screenshots captured from Agile board and included in Chapter 3\n- [ ] Q&A prep document: anticipated panel questions on novelty, security, scalability, ML Kit limits\n- [ ] 2 mock panel rehearsals conducted with classmates acting as panel\n- [ ] All team members can explain any part of the system\n\n## Story Points: 5",
+      "labels": [
+        "phase-6",
+        "documentation",
+        "defense",
+        "p1-must-have"
+      ],
+      "milestone": "Phase 6 \u2014 Testing & Defense",
+      "assignees": [],
+      "story_points": 5,
+      "layer": "Documentation",
+      "column": "Backlog"
+    },
+    {
+      "title": "[DEF-04] Create project ERD and system wireframes",
+      "body": "## Task\nProduce the visual design artifacts required for Chapter 3 and panel review.\n\n## Acceptance Criteria\n- [ ] ERD diagram: all 6 MongoDB collections with field types, data types, and relationship lines \u2014 saved as docs/TxtRecIntSrtHlpAst_ERD.png\n- [ ] Flutter wireframes: scan screen, history screen, AI chat screen, settings screen, login screen \u2014 annotated with accessibility notes\n- [ ] Wireframes saved to docs/TxtRecIntSrtHlpAst_Wireframes.pdf\n- [ ] Both documents included in Chapter 3 methodology section\n\n## Story Points: 3",
+      "labels": [
+        "phase-6",
+        "documentation",
+        "design",
+        "p2-should-have"
+      ],
+      "milestone": "Phase 6 \u2014 Testing & Defense",
+      "assignees": [],
+      "story_points": 3,
+      "layer": "Documentation",
+      "column": "Backlog"
+    }
+  ],
+  "project": {
+    "name": "TxtRecIntSrtHlpAst Kanban Board",
+    "body": "Agile project board for TxtRecIntSrtHlpAst (Text Recognition and Intelligent Speech Helper Assistant) \u2014 National University Philippines BSIT Capstone. Tracks all 6 phases: Setup \u2192 Mobile \u2192 Backend \u2192 React Web \u2192 AI Integration \u2192 Defense.",
+    "columns": [
+      "Backlog",
+      "To Do",
+      "In Progress",
+      "Code Review / Testing",
+      "Done"
+    ]
+  }
+}
