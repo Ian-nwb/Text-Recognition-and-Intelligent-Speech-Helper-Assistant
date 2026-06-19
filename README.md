@@ -1,10 +1,16 @@
-# Text-Recognition-and-Intelligent-Speech-Helper-Assistant
-is a Flutter-based mobile application designed to empower individuals with visual impairments in the Philippines through accessible, AI-enhanced text recognition and speech synthesis
+# Text Recognition and Intelligent Speech Helper Assistant
 
-Core Objectives
-■ Provide offline-capable OCR and TTS for visually impaired users without requiring constant internet access.
-■ Enable AI-powered contextual explanation of scanned text using OpenAI GPT-4o-mini or Google Gemini.
-■ Support Filipino language TTS output, addressing a gap in existing foreign accessibility apps.
-■ Deliver a gesture-based, voice-command-navigable mobile interface requiring no visual interaction.
-■ Provide an administrative web portal for user management, audit logging, and feedback review.
-■ Build a public-facing information website (GCash-style) for app downloads and feature documentation.
+A Flutter-based mobile application designed to empower individuals with visual impairments in the Philippines through accessible, AI-enhanced text recognition and speech synthesis.
+
+## Overview
+
+The Text Recognition and Intelligent Speech Helper Assistant leverages Optical Character Recognition (OCR), Text-to-Speech (TTS), and Artificial Intelligence (AI) technologies to help users independently access and understand printed or digital text. The application is designed with accessibility as a priority, offering voice-guided navigation, gesture-based interactions, and support for the Filipino language.
+
+## Core Objectives
+
+* Provide offline-capable OCR and TTS functionality, enabling users to access essential features without a constant internet connection.
+* Enable AI-powered contextual explanations of recognized text using OpenAI GPT-4o-mini or Google Gemini.
+* Support Filipino-language speech synthesis, addressing limitations found in many existing accessibility applications.
+* Deliver a gesture-based and voice-command-driven user interface that minimizes the need for visual interaction.
+* Provide an administrative web portal for user management, audit logging, and feedback monitoring.
+* Develop a public-facing information website, similar to modern product landing pages, for application downloads, feature documentation, and user support.
