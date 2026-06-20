@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: frontend
+    restart: always
+    ports:
+      - "8080:80" # Host port 8080 maps to container port 80 to prevent local web server collisions
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    external: true
