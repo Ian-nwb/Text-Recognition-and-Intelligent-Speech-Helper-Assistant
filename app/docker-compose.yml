@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  mobile-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mobile-web
+    restart: always
+    ports:
+      - "8081:80" # Host port 8081 maps to container port 80 to prevent local web server collisions
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    external: true
