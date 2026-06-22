@@ -13,4 +13,4 @@ The Text Recognition and Intelligent Speech Helper Assistant leverages Optical C
 * Support Filipino-language speech synthesis, addressing limitations found in many existing accessibility applications.
 * Deliver a gesture-based and voice-command-driven user interface that minimizes the need for visual interaction.
 * Provide an administrative web portal for user management, audit logging, and feedback monitoring.
-* Develop a public-facing information website, similar to modern product landing pages(Check Gcash.com for reference), for application downloads, feature documentation, and user support.
+* Develop a public-facing information website, similar to modern product landing pages, for application downloads, feature documentation, and user support.
