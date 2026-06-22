@@ -99,3 +99,84 @@ docker compose up --build -d
 ```
 * The Flutter web bundle is built and served via Nginx on:
   `http://localhost:8081`
+
+
+
+# First-Time Testing Architecture & Setup
+
+Automated tests reside entirely inside a single root directory structured by sub-service. Because testing packages run using local environments or specialized configurations, they are executed from within their respective workspace subfolders but target the centralized `tests/` folder.
+
+```
+your-project-root/
+├── server/                 # Express App Workspace
+├── web/                    # React Web Workspace
+├── app/                    # Flutter App Workspace
+└── tests/                  # <-- Centralized Root Testing Directory
+    ├── backend/            # Express unit & routing tests (*.test.js)
+    ├── frontend/           # Playwright UI E2E tests (*.spec.js)
+    └── mobile/             # Flutter integration tests (*_test.dart)
+```
+
+## 1. Pre-requisite Installations
+
+Before running tests for the first time, initialize the local dependencies required by each respective test engine. From your project workspace root, run:
+
+```bash
+# A. Scaffold the centralized directory layout
+mkdir -p tests/backend tests/frontend tests/mobile
+
+# B. Install Backend API testing prerequisites (Vitest & Supertest)
+cd server
+npm install --save-dev vitest supertest
+
+# C. Install Web UI testing prerequisites (Playwright)
+cd ../web
+npm init playwright@latest
+# [Prompts]: Select JS/TS as needed. When asked for test directory, input: "../tests/frontend"
+# [Prompts]: Select "false" for GitHub Actions workflow, "true" to download Playwright browsers.
+
+# D. Install Mobile Client testing prerequisites (Flutter native testing drivers)
+cd ../app
+flutter pub add "dev:flutter_test:{sdk: flutter}"
+flutter pub add "dev:integration_test:{sdk: flutter}"
+```
+
+## 2. Link Flutter to the Centralized Directory (Symlink)
+
+Because the Flutter toolchain strictly expects integrated test scripts to stay within its local directory package, you must construct a shortcut directory bridge (symlink). While remaining inside your local `app/` folder terminal, run the specific command below that matches your operating system:
+
+**On macOS or Linux:**
+
+```bash
+ln -s ../tests/mobile integration_test
+```
+
+**On Windows (Run Command Prompt or PowerShell as Administrator):**
+
+```dos
+mklink /D integration_test ..\tests\mobile
+```
+
+**Note:** This creates an `integration_test/` folder shortcut inside your `app/` directory pointing back up to `tests/mobile/`. Any mobile integration code you update in the root tests directory updates inside Flutter instantly.
+
+## Executing the Test Suites
+
+To execute test runs or debug specific logic, open a native local terminal inside the target service directory and run its designated tool pipeline:
+
+**Express API Layer:** Navigate to `/server` and run:
+
+```bash
+npx vitest run
+```
+
+**React Web Layer (E2E Canvas):** Navigate to `/web` and run:
+
+```bash
+npx playwright test --ui
+```
+
+**Flutter Mobile Integration:** Boot your local mobile desktop simulator or mobile device, navigate to `/app` and run:
+
+```bash
+flutter test integration_test/app_test.dart
+```
