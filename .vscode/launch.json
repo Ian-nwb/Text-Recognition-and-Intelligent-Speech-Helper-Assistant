@@ -1,0 +1,53 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flutter: run app",
+      "type": "dart",
+      "request": "launch",
+      "program": "app/lib/main.dart"
+    },
+    {
+      "name": "Flutter: debug tests",
+      "type": "dart",
+      "request": "launch",
+      "program": "app/test",
+      "flutterMode": "debug"
+    },
+    {
+      "name": "Server: debug (nodemon)",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/server",
+      "runtimeExecutable": "${workspaceFolder}/server/node_modules/.bin/nodemon",
+      "program": "${workspaceFolder}/server/src/index.js",
+      "envFile": "${workspaceFolder}/server/.env",
+      "restart": true,
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Server: jest tests",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/server",
+      "runtimeExecutable": "${workspaceFolder}/server/node_modules/.bin/jest",
+      "args": ["--runInBand", "--no-coverage"],
+      "envFile": "${workspaceFolder}/server/.env",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "name": "Web: chrome debug",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/web/src"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Full stack: server + web",
+      "configurations": ["Server: debug (nodemon)", "Web: chrome debug"]
+    }
+  ]
+}

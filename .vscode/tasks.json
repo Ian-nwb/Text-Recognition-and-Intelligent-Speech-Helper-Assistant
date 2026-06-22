@@ -1,0 +1,82 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "server: install deps",
+      "type": "shell",
+      "command": "npm install",
+      "options": { "cwd": "${workspaceFolder}/server" },
+      "group": "build"
+    },
+    {
+      "label": "server: dev",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": { "cwd": "${workspaceFolder}/server" },
+      "group": "build",
+      "isBackground": true
+    },
+    {
+      "label": "server: test",
+      "type": "shell",
+      "command": "npm test",
+      "options": { "cwd": "${workspaceFolder}/server" },
+      "group": { "kind": "test", "isDefault": true }
+    },
+    {
+      "label": "server: test coverage",
+      "type": "shell",
+      "command": "npm run test:coverage",
+      "options": { "cwd": "${workspaceFolder}/server" },
+      "group": "test"
+    },
+    {
+      "label": "web: dev",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": { "cwd": "${workspaceFolder}/web" },
+      "group": "build",
+      "isBackground": true
+    },
+    {
+      "label": "web: test",
+      "type": "shell",
+      "command": "npm test",
+      "options": { "cwd": "${workspaceFolder}/web" },
+      "group": "test"
+    },
+    {
+      "label": "flutter: test",
+      "type": "shell",
+      "command": "flutter test",
+      "options": { "cwd": "${workspaceFolder}/app" },
+      "group": "test"
+    },
+    {
+      "label": "flutter: build apk",
+      "type": "shell",
+      "command": "flutter build apk --release",
+      "options": { "cwd": "${workspaceFolder}/app" },
+      "group": "build"
+    },
+    {
+      "label": "docker: up",
+      "type": "shell",
+      "command": "docker compose up -d",
+      "options": { "cwd": "${workspaceFolder}/infra" },
+      "group": "build"
+    },
+    {
+      "label": "docker: down",
+      "type": "shell",
+      "command": "docker compose down",
+      "options": { "cwd": "${workspaceFolder}/infra" }
+    },
+    {
+      "label": "docker: logs",
+      "type": "shell",
+      "command": "docker compose logs -f",
+      "options": { "cwd": "${workspaceFolder}/infra" }
+    }
+  ]
+}

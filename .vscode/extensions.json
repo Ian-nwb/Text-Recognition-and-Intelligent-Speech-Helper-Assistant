@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "Dart-Code.flutter",
+    "Dart-Code.dart-code",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "dsznajder.es7-react-js-snippets",
+    "ms-azuretools.vscode-docker",
+    "streetsidesoftware.code-spell-checker",
+    "eamodio.gitlens",
+    "mongodb.mongodb-vscode",
+    "rangav.vscode-thunder-client",
+    "humao.rest-client",
+    "mikestead.dotenv"
+  ]
+}

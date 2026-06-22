@@ -1,0 +1,23 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "[dart]": {
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.tabSize": 2
+  },
+  "eslint.workingDirectories": ["server", "web"],
+  "cSpell.language": "en,tl",
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.dart_tool": true,
+    "**/build": true,
+    "**/__pycache__": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.dart_tool": true,
+    "**/build": true,
+    "**/__pycache__": true
+  }
+}
